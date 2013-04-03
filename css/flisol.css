@@ -1,0 +1,241 @@
+/* bootstrap Tuner */
+.navbar .brand, .navbar .nav > li > a {
+    color: #FCAE3E;
+    text-shadow: 0 1px 0 #000;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: #024E68;
+    color: #FCAE3E;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #FCAE3E;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #FFC78F;
+}
+
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #024E68;
+    color: #FCAE3E;
+}
+
+.dropdown-menu li > a {
+    clear: both;
+    color: #FCAE3E;
+    display: block;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+
+.navbar-inner {
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #155A72;
+    background-image: -moz-linear-gradient(top,#216278,#024E68);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#216278),to(#024E68));
+    background-image: -webkit-linear-gradient(top,#216278,#024E68);
+    background-image: -o-linear-gradient(top,#216278,#024E68);
+    background-image: linear-gradient(to bottom,#216278,#024E68);
+    background-repeat: repeat-x;
+    border: 1px solid #024E68;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#216278',endColorstr='#ff024E68',GradientType=0);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color: #FFE0C1;
+}
+
+.nav-tabs {
+    margin: 10px 0;
+}
+
+.tabs-left > .nav-tabs {
+    margin-right: 0;
+    height: 400px;
+}
+
+.carousel-inner > .item {
+    text-align: center;
+}
+
+.carousel-inner > .item > .carousel-caption{
+  text-align: justify;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: inline-block;;
+}
+
+table thead tr th, table thead tr td {
+    background: none repeat scroll 0 0 #3AAACF; /*1DABB8*/
+    color: #FFFFFF;
+}
+
+pre.text {
+  -ms-word-break: normal;
+      word-break: normal;
+  padding: 3px 5px;
+  overflow: auto;
+}
+
+body{
+    background: url(../img/bgcalendario-1080.png) no-repeat top center fixed #fab040;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    color: #000;
+    padding-top: 60px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+
+.bg-container {
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0 -20px 15px -20px;
+  zoom: 1;
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+     -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+          box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.contbox{
+    background: rgba(252, 174, 62);
+    background: rgba(252, 174, 62, 0.95);
+    -webkit-box-shadow: 0 0 25px 5px rgba(58,170,207,0.1);
+       -moz-box-shadow: 0 0 25px 5px rgba(58,170,207,0.1);
+            box-shadow: 0 0 25px 5px rgba(58,170,207,0.1);
+    margin: 10px 0;
+}
+
+.contbox > h2{
+    border-bottom: 2px dashed #FFE0C1;
+}
+
+.box-header {
+    border-bottom: 2px dashed #FFE0C1;
+    /*margin: 1px 20px;*/
+    /*padding: 10px 20px;*/
+    color: #000;
+}
+
+.box-header h3{
+    margin: 10px 10px 0;
+}
+
+.box-header h4{
+    margin: 10px 10px 2px;
+}
+
+.box-cont{
+    padding: 10px;
+    text-align: justify;
+}
+
+.box-span [class*="span"]{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.logoflisol{
+    /*padding: 0 10px 20px;*/
+}
+
+.box-round{
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+footer {
+    background-color: #000;
+    bottom: 0;
+    text-align: center;
+    color: #FCAE3E;
+    padding: 10px 0;
+}
+
+#footer p{vertical-align: middle;}
+
+.social{
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    right: 0;
+    margin-right: 0;
+}
+
+/* Large desktop */
+@media (min-width: 1369px) { 
+    body {
+        background: url(../img/bgcalendario-1920.png) no-repeat top center fixed #fab040;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    } 
+}
+
+@media (min-width: 1200px) and (max-width: 1368px) { 
+    body {
+        background: url(../img/bgcalendario-1368.png) no-repeat top center fixed #fab040;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    } 
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    body {
+        padding-top: 0;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    body {
+        background: url(../img/bgcalendario-768.png) no-repeat top center fixed #fab040;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+        padding-top: 0;
+    }
+    footer{
+      margin: 0 -20px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    body {
+        background: url(../img/bgcalendario-480.png) no-repeat top center fixed #fab040;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    } 
+ }
+
