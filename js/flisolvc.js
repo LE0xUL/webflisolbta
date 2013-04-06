@@ -5,10 +5,14 @@
 //   $("#divmain").empty().spin("large","#216278").load(file2load, datos);
 // }
 
-function load2div(div4load,file2load, datos, msg, callback){
+// function load2div(div4load,file2load, datos, msg, callback){
+//   console.log(msg || 'Carga archivo '+file2load);
+//   $(div4load).empty().spin("large","#216278").load(file2load, datos, callback);
+// }
+
+function load2div(div4load,file2load, msg){
   console.log(msg || 'Carga archivo '+file2load);
-  datos = (datos)? datos+"&k="+sft.ukey : "k="+sft.ukey;
-  $(div4load).empty().spin("large","#216278").load(file2load, datos, callback);
+  $(div4load).empty().spin("large","#216278").load(file2load);
 }
 
 function msgsyserror(msg){
