@@ -41,32 +41,115 @@ function solonum(){
     $(this).val(parseInt($(this).val(), 10));
 }
 
+/**
+  *CONTROLADORES DEL MENU DE NAVEGACION
+**/
+    // $("body").on('click','.navbar a', function(){
+    //     var href = $(this).attr('href');
+    //     showpage(href);
+    // });
 
-//Funcion que carga el menu
-function showmenu(menu){
-    $('#divmenu').load('./inc/menu.php','k='+sft.ukey+'&menu='+menu);
-}
+    $("body").on('click','#lnkhome', function(){
+        showhome();
+    });
 
-//Funcion que carga la interfaz principal
-function showhome(){
-    console.log("Se carga la interfaz principal");
-    load2div('#divmain','./inc/intlstpac.php', '','Se carga Interfaz de busqueda de usuario');
-}
+    $("body").on('click','#lnkinstalaciones', function(){
+        showinstalaciones();
+    });
+
+    $("body").on('click','#lnkconferencias', function(){
+        showconferencias();
+    });
+
+    $("body").on('click','#lnktalleres', function(){
+        showtalleres();
+    });
+
+    $("body").on('click','#lnkstands', function(){
+        showstands();
+    });
+
+    $("body").on('click','#lnkculturalibre', function(){
+        showculturalibre();
+    });
+
+    $("body").on('click','#lnkhackaton', function(){
+        showhackaton();
+    });
+
+    $("body").on('click','#lnkdifusion', function(){
+        showdifusion();
+    });
+
+    $("body").on('click','#lnkinstalador', function(){
+        showinstalador();
+    });
+
+    $("body").on('click','#lnklogistica', function(){
+        showlogistica();
+    });
+
+    $("body").on('click','#lnkpatrocinio', function(){
+        showpatrocinio();
+    });
+
+    $("body").on('click','#lnkcontacto', function(){
+        showcontacto();
+    });
 
 /**
   *VISTAS DEL MENU DE NAVEGACION
 **/
-    function showinthistoria(e){
-        e.preventDefault();
-        $('#divmsgsys').empty();
-        showmenu('historia');
-        load2div('#divmain','./inc/inthistoria.php', 'target=tabperfil','Se carga Interfaz de historia');
+    // function showpage(href){
+    //     var page = 'jx/'+href+'.html';
+    //     console.log(page)
+    //     load2div('#divmain',page);
+    // }
+
+    function showinstalaciones(){
+        load2div('#divmain','jx/instalaciones.html');
     }
-    function reloadhistoria(target1,target2){
-        var datos;
-        if(target1){
-            datos = "target="+target1;
-            datos +=(target2)?'$target2='+target2:'';
-        }
-        load2div('#divmain','./inc/inthistoria.php', datos?datos:'','Se carga Interfaz de historia');
+
+    function showhome(){
+        load2div('#divmain','jx/home.html');
+    }
+
+    function showconferencias(){
+        load2div('#divmain','jx/conferencias.html');
+    }
+
+    function showtalleres(){
+        load2div('#divmain','jx/talleres.html');
+    }
+
+    function showstands(){
+        load2div('#divmain','jx/stands.html');
+    }
+
+    function showculturalibre(){
+        load2div('#divmain','jx/culturalibre.html');
+    }
+
+    function showhackaton(){
+        load2div('#divmain','jx/hackaton.html');
+    }
+
+    function showdifusion(){
+        load2div('#divmain','jx/difusion.html');
+    }
+
+    function showinstalador(){
+        load2div('#divmain','jx/instalador.html');
+    }
+
+    function showlogistica(){
+        load2div('#divmain','jx/logistica.html');
+    }
+
+    function showpatrocinio(){
+        load2div('#divmain','jx/patrocinio.html');
+    }
+
+    function showcontacto(){
+        load2div('#divmain','jx/contacto.html');
     }

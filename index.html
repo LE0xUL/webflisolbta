@@ -51,20 +51,32 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="./">#FlisolBogota</a>
+                    <a id="lnkhome" class="brand" href="#home">#FlisolBogota</a>
                     <div class="nav-collapse collapse">
+
                         <ul class="nav">
-                            <!-- <li><a id="lnkcentral" href="./central.html">Flisol General</a></li> -->
-                            <!-- <li><a id="lnkdistri" href="./distribuidos.html">Flisoles Distribuidos</a></li> -->
                             <li><a id="lnkinstalaciones" href="#instalaciones"><img src="img/instalaciones.png" alt="instalaciones"> Instalaciones</a></li>
-                            <li><a id="lnkconferrencias" href="#conferencias"><img src="img/conferencias.png" alt="confrencias"> Conferencias</a></li>
+                            <li><a id="lnkconferencias" href="#conferencias"><img src="img/conferencias.png" alt="confrencias"> Conferencias</a></li>
                             <li><a id="lnktalleres" href="#talleres"><img src="img/talleres.png" alt="talleres"> Talleres</a></li>
                             <li><a id="lnkstands" href="#stands"><img src="img/stands.png" alt="stands"> Stands</a></li>
-                            <li><a id="lnklibrecultura" href="#librecultura"><img src="img/librecultura.png" alt="librecultura"> LibreCultura</a></li>
+                            <li><a id="lnkculturalibre" href="#culturalibre"><img src="img/librecultura.png" alt="culturalibre"> Cultura Libre</a></li>
                             <li><a id="lnkhackaton" href="#hackaton"><img src="img/hackaton.png" alt="hackaton"> Hackatón</a></li>
                         </ul>
+                        <ul class="nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participa!! <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a id="lnkdifusion" href="#difusion">Ayudanos a Difundir</a></li>
+                                    <li><a id="lnkinstalador" href="#instalador">Inscríbete como Instalador</a></li>
+                                    <li><a id="lnklogistica" href="#logistica">Inscríbete para Logistica</a></li>
+                                    <li class="divider"></li>
+                                    <li><a id="lnkpatrocinio" href="#patrocinio">Quieres Patrocinarnos</a></li>
+                                    <li><a id="lnkcontacto" href="#contacto">Contáctanos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                         <ul class="nav pull-right">
-                            <li><a href="#distribuidos" class="brand">#Flisoles Distribuidos</a></li>
+                            <li><a href="#distribuidos" class="brand">#FlisolesDistribuidos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -113,7 +125,32 @@
     <script type="text/javascript">
         switch (document.location.hash){
             default:
-            case 'home': load2div('#divmain','./jx/home.html');
+            case '#home': showhome();
+                        break;
+            case '#instalaciones': showinstalaciones();
+                        break;
+            case '#conferencias': showconferencias();
+                        break;
+            case '#talleres': showtalleres();
+                        break;
+            case '#stands': showstands();
+                        break;
+            case '#culturalibre': showculturalibre();
+                        break;
+            case '#hackaton': showhackaton();
+                        break;
+            case '#difusion': showdifusion();
+                        break;
+            case '#instalador': showinstalador();
+                        break;
+            case '#logistica': showlogistica();
+                        break;
+            case '#patrocinio': showpatrocinio();
+                        break;
+            case '#contacto': showcontacto();
+                        break;
+
+
         }
     </script>
     <script type="text/javascript">
@@ -134,4 +171,5 @@
 </html>
 <!-- 
 (.span3>.contbox.box-round>(.box-header>h3)+.box-cont)
+.row>.span12>.contbox.box-cont.box-round
  -->
