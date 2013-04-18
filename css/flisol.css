@@ -7,6 +7,7 @@
 
 .navbar .brand, .navbar .nav > li > a.brand, .navbar .nav > li.dropdown > a {
   padding: 10px 10px;
+  text-decoration: none;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
@@ -88,8 +89,19 @@
 }
 
 table thead tr th, table thead tr td {
-    background: none repeat scroll 0 0 #3AAACF; /*1DABB8*/
+    background: none; /*1DABB8*/
     color: #FFFFFF;
+}
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+    background-color: #FDD394;
+}
+
+a{
+  color: #000;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #FDC36E;
 }
 
 pre.text {
@@ -199,7 +211,10 @@ footer {
     padding: 10px 0;
 }
 
-#footer p{vertical-align: middle;}
+footer a{
+  color: #FDD394;
+  text-decoration: none;
+}
 
 .social{
     display: block;
