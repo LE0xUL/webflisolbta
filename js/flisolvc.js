@@ -89,6 +89,10 @@ function solonum(){
         showlogistica();
     });
 
+    $("body").on('click','#lnkformstand', function(){
+        showformstand();
+    });
+
     $("body").on('click','#lnkpatrocinio', function(){
         showpatrocinio();
     });
@@ -144,6 +148,10 @@ function solonum(){
 
     function showlogistica(){
         load2div('#divmain','jx/logistica.html');
+    }
+
+    function showformstand(){
+        load2div('#divmain','jx/formstand.html');
     }
 
     function showpatrocinio(){

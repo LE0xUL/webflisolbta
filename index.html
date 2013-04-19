@@ -69,6 +69,7 @@
                                     <li><a id="lnkdifusion" href="#difusion">Ayudanos a Difundir</a></li>
                                     <li><a id="lnkinstalador" href="#instalador">Inscríbete como Instalador</a></li>
                                     <li><a id="lnklogistica" href="#logistica">Inscríbete para Logistica</a></li>
+                                    <li><a id="lnkformstand" href="#formstand">Inscríbe tu Stand</a></li>
                                     <li class="divider"></li>
                                     <li><a id="lnkpatrocinio" href="#patrocinio">Quieres Patrocinarnos</a></li>
                                     <li><a id="lnkcontacto" href="#contacto">Contáctanos</a></li>
@@ -90,7 +91,7 @@
         <div class="container">
             <div class="row">
                 <div class="span12 text-left">
-                    Organiza y Apoya:
+                    Organiza:
                 </div>
             </div>
             <div class="row">
@@ -98,11 +99,23 @@
                     <a href="http://hackbo.co" target="_blank"><img src="img/hackbo.png" alt="HackerSpace Bogotá"></a>
                     <a href="http://www.ubuntu-co.com" target="_blank"><img src="img/ubuntuco.png" alt="Ubuntu Colombia"></a>
                     <a href="#"><img src="img/alive.png" alt="ALIVE Project"></a>
-                    <a href="http://www.mozilla.org" target="_blank"><img src="img/mozilla.png" alt="Mozilla Colombia"></a>
+                    <a href="http://www.mozillacolombia.org" target="_blank"><img src="img/mozilla.png" alt="Mozilla Colombia"></a>
                     <a href="http://www.bogota-mesh.org" target="_blank"><img src="img/BogotaMesh.png" alt="Bogota Mesh"></a>
                     <a href="http://raabogota.blogspot.com" target="_blank"><img src="img/raab.jpeg" alt="Red Alternativa de Bogotá"></a>
+                    <!-- <a href="http://warebeone.com/" target="_blank"><img src="img/warebeone.png" alt="Ware be One"></a> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12 text-left">
+                    Apoya:
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12 text-center">
+                    <a href="http://u.xtic.co" target="_blank"><img src="img/uxtic.png" alt="Red de Universidades por las TIC"></a>
+                    <a href="http://www.udistrital.edu.co/dependencias/tipica.php?id=81" target="_blank"><img src="img/udistrital.png" alt="Universidad Distrital Francisco José de Caldas - Facultad Tecnológica"></a>
                     <a href="http://tic.bogota.gov.co" target="_blank"><img src="img/consejeriatic.jpeg" alt="Alta Consejería TIC"></a>
-                    <a href="http://www.bogota.gov.co" target="_blank"><img src="img/alcaldia.png" alt="Alcaldia de Bogotá"></a>
+                    <a href="http://www.bogotahumana.gov.co" target="_blank"><img src="img/alcaldia.png" alt="Alcaldia de Bogotá"></a>
                 </div>
             </div>
         </div>
@@ -111,6 +124,8 @@
             <div class="row">
                 <div class="span12">
                     Este sitio y todo su contenido tiene licencia <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/co/deed.es_ES">Creative Commons 2.5 Atribución CompartirIgual</a> y su código fuente está disponible en <a href="https://github.com/trecetp/webflisolbta" target="_blank">GitHub</a> bajo la GNU Public License 3.0.<br />
+                    Se recomienda ver en <a href="http://www.firefox.com">Mozilla Firefox <img src="img/firefox-logo24.png" alt="Firefox Logo"></a>.
+                    Sitio alojado en <a href="http://ColombianHost.net">ColombianHost</a>. Diseñado por <a href="http://twitter.com/trecetp" target="_blank">@trecetp</a>
                 </div>
             </div>
         </div>
@@ -145,6 +160,8 @@
                         break;
             case '#logistica': showlogistica();
                         break;
+            case '#formstand': showformstand();
+                        break;
             case '#patrocinio': showpatrocinio();
                         break;
             case '#contacto': showcontacto();
@@ -152,17 +169,17 @@
         }
     </script>
     <script type="text/javascript">
-        // var _gaq = _gaq || [];
-        // _gaq.push(['_setAccount', 'UA-38671530-1']);
-        // _gaq.push(['_setDomainName', 'flisolbogota.info']);
-        // _gaq.push(['_setAllowLinker', true]);
-        // _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38671530-1']);
+        _gaq.push(['_setDomainName', 'flisolbogota.info']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
 
-        // (function() {
-        //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        // })();
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
     </script>
   
 </body>
